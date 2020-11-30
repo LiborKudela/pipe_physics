@@ -1,22 +1,30 @@
 # Efficient integration of machine learning into district heating predictive models
 Suplementary materials
 
+DOI:
+
+Dependencies:
+- FeniCS: https://fenicsproject.org/
+- OpenModelica: https://www.openmodelica.org/
+- lofi: https://github.com/LiborKudela/lofi
+
 Usage:
-1) Generate mesh files etc.
+
+1) Generate mesh files for the complex simulation etc.
 ```console
-:~$ python3 GenerateTopology.py
+python3 GenerateTopology.py
 ```
 
-2) Run FEM simulation to get training data
+2) Run FEM simulation to generate data for training
 ```console
-:~$ mpirun -n 40 python3 SimulationTraining.py
+mpirun -n 40 python3 SimulationTraining.py
 ```
 
-3) Run FEM simulation to get test data
+3) Run FEM simulation to generate data for testing
 ```console
-:~$ mpirun -n 40 python3 SimulationTest.py
+mpirun -n 40 python3 SimulationTest.py
 ```
-4) Train the Modelica model to fit training data
+4) Train the Modelica model to fit training data in a interactive mode
 ```console
-:~$ mpirun -n 40 python3 optimize.py
+mpirun -n 40 python3 optimize.py
 ```
