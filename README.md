@@ -1,8 +1,9 @@
 # Efficient integration of machine learning into district heating predictive models
-Suplementary materials
-
+---
+### Published Article
 DOI:
 
+---
 Dependencies:
 - FeniCS: https://fenicsproject.org/
 - OpenModelica: https://www.openmodelica.org/
