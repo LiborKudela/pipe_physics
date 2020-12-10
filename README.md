@@ -1,7 +1,8 @@
 # Efficient integration of machine learning into district heating predictive models
 ---
 ### Published Article
-DOI:
+DOI:  10.3390/en13236381
+Link: https://www.mdpi.com/1996-1073/13/23/6381
 
 ---
 Dependencies:
